@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
-# import os
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-q5%p1w@-&#f8a*a@_)pp^wii^p454%!j*+4^*7*s!3ovtt*75-"  # os.environ.get("SECRET_KEY")
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -134,3 +134,11 @@ MEDIA_ROOT = BASE_DIR / "media"
 
 # Cart settings
 CART_SESSION_ID = "cart"
+
+# Email settings
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_HOST_USER = os.environ.get("GOOGLE_EMAIL")
+EMAIL_HOST_PASSWORD = os.environ.get("GOOGLE_PASSWORD")
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True  # TLS - Transport Layer Security
