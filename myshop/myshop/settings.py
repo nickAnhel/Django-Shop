@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "shop.apps.ShopConfig",
     "cart.apps.CartConfig",
     "orders.apps.OrdersConfig",
+    "payment.apps.PaymentConfig",
     "easy_thumbnails",
 ]
 
@@ -142,3 +143,8 @@ EMAIL_HOST_USER = os.environ.get("GOOGLE_EMAIL")
 EMAIL_HOST_PASSWORD = os.environ.get("GOOGLE_PASSWORD")
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True  # TLS - Transport Layer Security
+
+# Stripe payment system settings
+STRIPE_PUBLISHABLE_KEY = os.environ.get("STRIPE_PUBLISHABLE_KEY")
+STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY")
+STRIPE_API_VERSION = "2022-08-01"
