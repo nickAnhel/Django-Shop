@@ -1,5 +1,6 @@
 import csv
 from datetime import datetime
+from django.urls import reverse
 from django.contrib import admin
 from django.db.models import QuerySet
 from django.http import HttpRequest, HttpResponse
@@ -33,7 +34,9 @@ def export_to_csv(
 
     writer = csv.writer(response)
     fields = [
-        field for field in opts.get_fields() if not field.many_to_many and not field.one_to_many
+        field
+        for field in opts.get_fields()
+        if not field.many_to_many and not field.one_to_many
     ]
 
     writer.writerow([field.verbose_name for field in fields])
@@ -52,8 +55,14 @@ def export_to_csv(
     return response
 
 
+def order_detail(obj: Order):
+    url = reverse("orders:admin_order_detail", args=[obj.id])
+    return mark_safe(f"<a href={url}>View</a>")
+
+
 order_stripe_payment.short_description = "Stripe payment"
 export_to_csv.short_description = "Export to CSV"
+order_detail.short_description = "Order detail"
 
 
 @admin.register(Order)
@@ -70,6 +79,7 @@ class OrderAdmin(admin.ModelAdmin):
         order_stripe_payment,
         "created",
         "updated",
+        order_detail,
     ]
     list_filter = ["paid", "created", "updated"]
     inlines = [OrderItemInline]
