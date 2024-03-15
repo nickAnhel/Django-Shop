@@ -10,10 +10,10 @@ from .forms import CouponAplyForm
 @require_POST
 def coupon_apply(request: HttpRequest) -> HttpResponseRedirect:
     now = timezone.now()
-    form = CouponAplyForm(request.POST)
+    form = CouponAplyForm(data=request.POST)
 
     if form.is_valid():
-        code = form.changed_data["code"]
+        code = form.cleaned_data["code"]
 
         try:
             coupon = Coupon.objects.get(
