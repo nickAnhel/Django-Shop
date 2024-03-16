@@ -23,3 +23,8 @@ In progress...
 docker pull rabbitmq
 docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:management
 ```
+
+```console
+docker pull redis
+docker run -it --rm --name redis -p 6379:6379 redis
+```
