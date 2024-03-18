@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-18 17:25+0300\n"
+"POT-Creation-Date: 2024-03-18 18:15+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
 #: orders/models.py:12
 msgid "first name"
 msgstr "имя"
@@ -42,3 +43,81 @@ msgstr "почтовый индекс"
 #: orders/models.py:17
 msgid "city"
 msgstr "город"
+
+#: orders/templates/orders/order/create.html:5
+#: orders/templates/orders/order/create.html:9
+msgid "Checkout"
+msgstr "Контроль"
+
+#: orders/templates/orders/order/create.html:11
+msgid "Your order"
+msgstr "Ваш заказ"
+
+#: orders/templates/orders/order/create.html:21
+#, python-format
+msgid ""
+"\n"
+"                        \"%(code)s\" (%(discount)s%% off)\n"
+"                    "
+msgstr ""
+
+#: orders/templates/orders/order/create.html:28
+#: orders/templates/orders/order/pdf.html:58
+msgid "Total"
+msgstr "Итог"
+
+#: orders/templates/orders/order/create.html:33
+msgid "Place order"
+msgstr "Разместить заказ"
+
+#: orders/templates/orders/order/pdf.html:4
+msgid "My shop"
+msgstr "Мой Магазин"
+
+#: orders/templates/orders/order/pdf.html:6
+msgid "Invoice no."
+msgstr "Накладная н."
+
+#: orders/templates/orders/order/pdf.html:11
+msgid "Bill to"
+msgstr "Счет на"
+
+#: orders/templates/orders/order/pdf.html:18
+msgid "Items bought"
+msgstr "Купленные товары"
+
+#: orders/templates/orders/order/pdf.html:22
+msgid "Product"
+msgstr "Товар"
+
+#: orders/templates/orders/order/pdf.html:23
+msgid "Price"
+msgstr "Цена"
+
+#: orders/templates/orders/order/pdf.html:24
+msgid "Quantity"
+msgstr "Количество"
+
+#: orders/templates/orders/order/pdf.html:25
+msgid "Cost"
+msgstr "Стоимость"
+
+#: orders/templates/orders/order/pdf.html:40
+msgid "Subtotal"
+msgstr "Подытог"
+
+#: orders/templates/orders/order/pdf.html:47
+#, python-format
+msgid ""
+"\n"
+"              \"%(code)s\" (%(discount)s%% off)\n"
+"            "
+msgstr ""
+
+#: orders/templates/orders/order/pdf.html:65
+msgid "Paid"
+msgstr "Оплачено"
+
+#: orders/templates/orders/order/pdf.html:65
+msgid "Pending payment"
+msgstr "Ожидание платежа"

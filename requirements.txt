@@ -6,3 +6,4 @@ flower==1.1.0
 stripe==4.0.2
 WeasyPrint==56.1
 redis==4.3.4
+django-rosetta==0.9.8
