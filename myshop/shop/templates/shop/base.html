@@ -25,9 +25,6 @@
                         {% plural %}
                             {{ items }} items, ${{ total }}
                         {% endblocktrans %}
-
-                        {{ total_items }} item{{ total_items|pluralize }}
-                        ${{ cart.get_total_price }}
                     </a>
                 {% elif not order %}
                     {% trans "Your cart is empty" %}

@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "payment.apps.PaymentConfig",
     "coupons.apps.CouponsConfig",
     "easy_thumbnails",
+    "rosetta",
 ]
 
 MIDDLEWARE = [
