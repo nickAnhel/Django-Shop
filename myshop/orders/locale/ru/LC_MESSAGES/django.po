@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-18 18:15+0300\n"
-"PO-Revision-Date: 2024-03-18 17:51+0000\n"
+"POT-Creation-Date: 2024-03-18 21:10+0300\n"
+"PO-Revision-Date: 2024-03-18 18:11+0000\n"
 "Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -124,3 +124,7 @@ msgstr "Оплачено"
 #: orders/templates/orders/order/pdf.html:65
 msgid "Pending payment"
 msgstr "Ожидание платежа"
+
+#: orders/urls.py:9
+msgid "create/"
+msgstr "создать/"

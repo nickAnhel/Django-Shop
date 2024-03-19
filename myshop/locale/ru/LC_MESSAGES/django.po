@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-18 18:15+0300\n"
-"PO-Revision-Date: 2024-03-18 17:49+0000\n"
+"POT-Creation-Date: 2024-03-18 21:10+0300\n"
+"PO-Revision-Date: 2024-03-18 18:13+0000\n"
 "Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -101,13 +101,30 @@ msgstr "Расчет"
 msgid "Coupon"
 msgstr "Купон"
 
-#: myshop/settings.py:119
+#: myshop/settings.py:120
 msgid "English"
 msgstr "Англиский"
 
-#: myshop/settings.py:120
+#: myshop/settings.py:121
 msgid "Russian"
 msgstr "Русский"
+
+#: myshop/urls.py:29
+msgid "cart/"
+msgstr "корзина/"
+
+#: myshop/urls.py:30
+msgid "orders/"
+msgstr "заказы/"
+
+#: myshop/urls.py:31
+msgid "payment/"
+msgstr "оплата/"
+
+#: myshop/urls.py:32
+#| msgid "Coupon"
+msgid "coupons/"
+msgstr "купоны/"
 
 #: payment/templates/payment/canceled.html:4
 msgid "Payment canceled"
@@ -155,6 +172,19 @@ msgstr ""
 msgid "Pay now"
 msgstr "Оплатить"
 
+#: payment/urls.py:9
+msgid "process/"
+msgstr "оплата_в_процессе/"
+
+#: payment/urls.py:10
+msgid "completed/"
+msgstr "оплата_успешна/"
+
+#: payment/urls.py:11
+#| msgid "Payment canceled"
+msgid "canceled/"
+msgstr "оплата_отменена/"
+
 #: shop/templates/shop/base.html:8 shop/templates/shop/base.html:14
 msgid "My Shop"
 msgstr "Мой Магазин"
@@ -180,7 +210,7 @@ msgstr[1] ""
 "\n"
 "%(items) товаров, $%(total)"
 
-#: shop/templates/shop/base.html:33
+#: shop/templates/shop/base.html:30
 msgid "Your cart is empty"
 msgstr "Ваша корзина пуста"
 
@@ -188,15 +218,15 @@ msgstr "Ваша корзина пуста"
 msgid "Add to cart"
 msgstr "Добавить в корзину"
 
-#: shop/templates/shop/product/list.html:6
-#: shop/templates/shop/product/list.html:24
+#: shop/templates/shop/product/list.html:7
+#: shop/templates/shop/product/list.html:25
 msgid "Products"
 msgstr "Товары"
 
-#: shop/templates/shop/product/list.html:11
+#: shop/templates/shop/product/list.html:12
 msgid "Categories"
 msgstr "Категории"
 
-#: shop/templates/shop/product/list.html:14
+#: shop/templates/shop/product/list.html:15
 msgid "All"
 msgstr "Все товары"

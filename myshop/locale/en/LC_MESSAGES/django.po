@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-18 18:15+0300\n"
+"POT-Creation-Date: 2024-03-18 21:10+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,13 +95,29 @@ msgstr ""
 msgid "Coupon"
 msgstr ""
 
-#: myshop/settings.py:119
+#: myshop/settings.py:120
 msgid "English"
 msgstr "Английский"
 
-#: myshop/settings.py:120
+#: myshop/settings.py:121
 msgid "Russian"
 msgstr "Русский"
+
+#: myshop/urls.py:29
+msgid "cart/"
+msgstr ""
+
+#: myshop/urls.py:30
+msgid "orders/"
+msgstr ""
+
+#: myshop/urls.py:31
+msgid "payment/"
+msgstr ""
+
+#: myshop/urls.py:32
+msgid "coupons/"
+msgstr ""
 
 #: payment/templates/payment/canceled.html:4
 msgid "Payment canceled"
@@ -147,6 +163,18 @@ msgstr ""
 msgid "Pay now"
 msgstr ""
 
+#: payment/urls.py:9
+msgid "process/"
+msgstr ""
+
+#: payment/urls.py:10
+msgid "completed/"
+msgstr ""
+
+#: payment/urls.py:11
+msgid "canceled/"
+msgstr ""
+
 #: shop/templates/shop/base.html:8 shop/templates/shop/base.html:14
 msgid "My Shop"
 msgstr ""
@@ -170,7 +198,7 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
-#: shop/templates/shop/base.html:33
+#: shop/templates/shop/base.html:30
 msgid "Your cart is empty"
 msgstr ""
 
@@ -178,15 +206,15 @@ msgstr ""
 msgid "Add to cart"
 msgstr ""
 
-#: shop/templates/shop/product/list.html:6
-#: shop/templates/shop/product/list.html:24
+#: shop/templates/shop/product/list.html:7
+#: shop/templates/shop/product/list.html:25
 msgid "Products"
 msgstr ""
 
-#: shop/templates/shop/product/list.html:11
+#: shop/templates/shop/product/list.html:12
 msgid "Categories"
 msgstr ""
 
-#: shop/templates/shop/product/list.html:14
+#: shop/templates/shop/product/list.html:15
 msgid "All"
 msgstr ""
