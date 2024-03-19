@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "coupons.apps.CouponsConfig",
     "easy_thumbnails",
     "rosetta",
+    "parler",
 ]
 
 MIDDLEWARE = [
@@ -122,7 +123,7 @@ LANGUAGES = [
 ]
 
 LOCALE_PATHS = [
-    BASE_DIR / 'locale',
+    BASE_DIR / "locale",
 ]
 
 TIME_ZONE = "UTC"
@@ -168,3 +169,15 @@ STRIPE_WEBHOOK_SECRET = os.environ.get("STRIPE_WEBHOOK_SECRET")
 REDIS_HOST = "localhost"
 REDIS_PORT = 6379
 REDIS_DB = 1
+
+# Django-parler sewtiings
+PARLER_LANGUAGES = {
+    None: (
+        {"code": "en"},
+        {"code": "ru"},
+    ),
+    "default": {
+        "fallback": "en",
+        "hide_untranslated": False,
+    },
+}
